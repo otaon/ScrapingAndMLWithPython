@@ -83,6 +83,7 @@ def main():
                                     cast_title = schedule_td_div_div_span.find("a").text
                                     caster_name = schedule_td_div_div_span.find("span").find("a").text
 
+                                    # 日時配信情報を登録
                                     cast_infos.append({"date": date,
                                                        "hour": hour,
                                                        "minute": minute,
@@ -90,18 +91,42 @@ def main():
                                                        "cast_title": cast_title,
                                                        "img_path": img_path})
 
+    # iconと所属対応一覧
+    icon_dict = {"upd8.png": "upd8",
+                 "appland.png": ".LIVE",
+                 "cover.png": "cover",
+                 "amaryllis.png": "アマリリス組",
+                 "paryi.png": "パリィ",
+                 "zig.png": "zig",
+                 "nijisanji.png": "にじさんじ",
+                 "nijisanji_seeds.png": "にじさんじSEEDs",
+                 "animare.png": "あにまーれ",
+                 "hnst.png": "HoneyStrap",
+                 "vlive.png": "ぶいらいぶ",
+                 "reality-": "REALITY",
+                 "ichinana-": "イチナナ",
+                 "shovel.png": "ShoveL",
+                 "iwamotocho.png": "岩本町芸能社"}
+
     def quote(string):
         return '"' + string + '"'
 
     with open("./" + save_name, mode="w") as sv:
-        sv.write("date, " + "hour, " + "minute, " + "caster_name, " + "cast_title, " + "img_path" + "\n")
+        sv.write("date, " + "hour, " + "minute, " + "caster_name, " + "cast_title, " + "belonging" + "\n")
         for cast_info in cast_infos:
+            # 所属を判別する
+            belonging = "Other"
+            for icon in icon_dict.keys():
+                if icon in cast_info["img_path"]:
+                    belonging = icon_dict[icon]
+                    break
+
             sv.write(quote(cast_info["date"]) + ", " +
                      quote(cast_info["hour"]) + ", " +
                      quote(cast_info["minute"]) + ", " +
                      quote(cast_info["caster_name"]) + ", " +
                      quote(cast_info["cast_title"]) + ", " +
-                     quote(cast_info["img_path"]))
+                     quote(belonging))
             sv.write("\n")
 
 
