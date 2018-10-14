@@ -96,15 +96,13 @@ def main():
     with open("./" + save_name, mode="w") as sv:
         sv.write("date, " + "hour, " + "minute, " + "caster_name, " + "cast_title, " + "img_path" + "\n")
         for cast_info in cast_infos:
-            sv.write(quote(date) + ", " + quote(cast_info["date"]) + ", " +
-                     quote(hour) + ", " + quote(cast_info["hour"]) + ", " +
-                     quote(minute) + ", " + quote(cast_info["minute"]) + ", " +
-                     quote(caster_name) + ", " + quote(cast_info["caster_name"]) + ", " +
-                     quote(cast_title) + ", " + quote(cast_info["cast_title"]) + ", " +
-                     quote(img_path) + ", " + quote(cast_info["img_path"]))
+            sv.write(quote(cast_info["date"]) + ", " +
+                     quote(cast_info["hour"]) + ", " +
+                     quote(cast_info["minute"]) + ", " +
+                     quote(cast_info["caster_name"]) + ", " +
+                     quote(cast_info["cast_title"]) + ", " +
+                     quote(cast_info["img_path"]))
             sv.write("\n")
-
-
 
 
 if __name__ == "__main__":
