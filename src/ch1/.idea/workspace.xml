@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f47849f9-bbf6-4344-8111-818c9153cc80" name="Default Changelist" comment="feature:">
-      <change beforePath="$PROJECT_DIR$/schedules_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/schedules_getter.py" afterDir="false" />
-    </list>
+    <list default="true" id="f47849f9-bbf6-4344-8111-818c9153cc80" name="Default Changelist" comment="feature:" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +12,7 @@
     <session id="-1230124536">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -69,8 +67,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/schedules_getter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="746">
+              <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
               <folding>
                 <element signature="e#43#53#0" expanded="true" />
                 <marker date="1539619245404" expanded="true" signature="4990:4999" ph="..." />
@@ -226,7 +224,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="32" width="1887" height="2128" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5306958" visible="true" weight="0.16675632" />
       <window_info id="Structure" order="1" sideWeight="0.46830267" side_tool="true" weight="0.2592792" />
@@ -234,7 +231,7 @@
       <window_info anchor="bottom" id="Inspection Results" weight="0.3296146" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2565923" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2565923" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39908722" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,8 +400,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/schedules_getter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="746">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
           <folding>
             <element signature="e#43#53#0" expanded="true" />
             <marker date="1539619245404" expanded="true" signature="4990:4999" ph="..." />
